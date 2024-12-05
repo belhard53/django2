@@ -145,7 +145,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'  # только для apps
-STATICFILES_DIRS = [Path(BASE_DIR, 'static/')] # для корня
+# STATICFILES_DIRS = [Path(BASE_DIR, 'static/')] # для корня
+STATIC_ROOT = Path(BASE_DIR, 'static')
 
 
 MEDIA_URL = '/media/'
