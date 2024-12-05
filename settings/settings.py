@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-a$we6t%ty$ta)ky)$*h*w%_(6h4d31%$9lz2m_brg5g!x3es@c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -145,7 +145,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'  # только для apps
-# STATICFILES_DIRS = [Path(BASE_DIR, 'static/')] # для корня
+STATICFILES_DIRS = [Path(BASE_DIR, 'static/')] # для корня
 
 
 MEDIA_URL = '/media/'
